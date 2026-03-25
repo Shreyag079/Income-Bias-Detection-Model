@@ -1,6 +1,6 @@
-# =====================================
+
 # Logistic Regression for Income Prediction
-# =====================================
+
 
 import pandas as pd
 import numpy as np
@@ -71,6 +71,8 @@ X_train, X_test, y_train, y_test = train_test_split(
     random_state=42,
     stratify=y
 )
+
+joblib.dump((X_train, X_test, y_train, y_test), "data_split.pkl")
 
 # -------------------------------------
 # 8. Logistic Regression model
