@@ -50,7 +50,7 @@ def compute_metrics(X, y_true, y_pred):
 
 
 # Counterfactual Fairness
-def counterfactual_bias(model, X, num_samples=500):
+def counterfactual_bias(model, X, num_samples=1000):
     flips = 0
 
     for i in range(num_samples):

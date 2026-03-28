@@ -31,8 +31,8 @@ df['income'] = df['income'].apply(
 # -------------------------------------
 # 4. Separate features and target
 # -------------------------------------
-X = df.drop(columns=['income', 'fnlwgt', 'native-country'])
-y = df['income']
+X = df.drop(columns=['income', 'fnlwgt', 'native-country']) #input features
+y = df['income'] #target variable
 
 # -------------------------------------
 # 5. Identify column types
@@ -115,3 +115,28 @@ joblib.dump(model, "income_logistic_regression_model.pkl")
 joblib.dump(preprocessor, "income_preprocessor.pkl")
 
 print("Model saved successfully!")
+
+
+total_records = len(df)
+
+# Total males and females
+total_males = len(df[df['sex'] == 'Male'])
+total_females = len(df[df['sex'] == 'Female'])
+
+# High and low income overall
+total_high_income = len(df[df['income'] == 1])
+total_low_income = len(df[df['income'] == 0])
+
+# High-income males and females
+high_income_males = len(df[(df['sex'] == 'Male') & (df['income'] == 1)])
+high_income_females = len(df[(df['sex'] == 'Female') & (df['income'] == 1)])
+
+
+print("Before Mitigation:")
+print("Total Records:", total_records)
+print("Total Males:", total_males)
+print("Total Females:", total_females)
+print("High Income (>50K):", total_high_income)
+print("Low Income (<=50K):", total_low_income)
+print("High Income Males:", high_income_males)
+print("High Income Females:", high_income_females)

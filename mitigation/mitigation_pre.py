@@ -58,3 +58,12 @@ print(classification_report(y_test, y_pred))
 
 joblib.dump(model, "model_preprocessing.pkl")
 print("Preprocessing mitigation model saved!")
+
+
+female_high_after = train_bal[
+    (train_bal['sex'] == 'Female') & (train_bal['income'] == 1)
+]
+
+print("\nAfter Preprocessing Mitigation:")
+print("High-income females:", len(female_high_after))
+
