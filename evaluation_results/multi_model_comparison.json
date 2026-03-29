@@ -1,0 +1,74 @@
+{
+  "Logistic Regression":{
+    "Accuracy":0.7634,
+    "Precision":0.5172,
+    "Recall":0.7572,
+    "F1 Score":0.6145,
+    "ROC-AUC":0.8468,
+    "Statistical Parity Diff":0.2486,
+    "Equal Opportunity Diff":0.3127,
+    "Avg Abs Odds Diff":0.2174,
+    "Disparate Impact":2.2663,
+    "Theil Index":1.0092
+  },
+  "Random Forest":{
+    "Accuracy":0.8044,
+    "Precision":0.5706,
+    "Recall":0.8671,
+    "F1 Score":0.6883,
+    "ROC-AUC":0.9135,
+    "Statistical Parity Diff":0.3423,
+    "Equal Opportunity Diff":0.1262,
+    "Avg Abs Odds Diff":0.1827,
+    "Disparate Impact":3.3311,
+    "Theil Index":0.9721
+  },
+  "Decision Tree":{
+    "Accuracy":0.7998,
+    "Precision":0.5643,
+    "Recall":0.8598,
+    "F1 Score":0.6813,
+    "ROC-AUC":0.898,
+    "Statistical Parity Diff":0.338,
+    "Equal Opportunity Diff":0.1285,
+    "Avg Abs Odds Diff":0.1825,
+    "Disparate Impact":3.2997,
+    "Theil Index":0.9697
+  },
+  "SVM":{
+    "Accuracy":0.795,
+    "Precision":0.5576,
+    "Recall":0.8559,
+    "F1 Score":0.6753,
+    "ROC-AUC":0.8959,
+    "Statistical Parity Diff":0.3344,
+    "Equal Opportunity Diff":0.126,
+    "Avg Abs Odds Diff":0.1802,
+    "Disparate Impact":3.1408,
+    "Theil Index":0.962
+  },
+  "Naive Bayes":{
+    "Accuracy":0.7938,
+    "Precision":0.6823,
+    "Recall":0.3213,
+    "F1 Score":0.4367,
+    "ROC-AUC":0.8566,
+    "Statistical Parity Diff":0.0763,
+    "Equal Opportunity Diff":0.0064,
+    "Avg Abs Odds Diff":0.0313,
+    "Disparate Impact":2.1812,
+    "Theil Index":2.144
+  },
+  "XGBoost":{
+    "Accuracy":0.8703,
+    "Precision":0.7808,
+    "Recall":0.6662,
+    "F1 Score":0.7189,
+    "ROC-AUC":0.9264,
+    "Statistical Parity Diff":0.1811,
+    "Equal Opportunity Diff":0.067,
+    "Avg Abs Odds Diff":0.0648,
+    "Disparate Impact":3.0159,
+    "Theil Index":1.5492
+  }
+}

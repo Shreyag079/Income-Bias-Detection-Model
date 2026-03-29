@@ -1,0 +1,5 @@
+,Accuracy,Precision,Recall,F1 Score,ROC-AUC,Statistical Parity Diff,Equal Opportunity Diff,Avg Abs Odds Diff,Disparate Impact,Theil Index
+Baseline,0.845,0.7281,0.6025,0.6594,0.9017,-0.1708,-0.0635,0.0688,0.3475,0.125
+Reweighting,0.8122,0.5918,0.7916,0.6773,0.8942,-0.176,0.0654,0.0751,0.5493,0.0931
+Adversarial Debiasing,0.8395,0.7805,0.4947,0.6055,,-0.0683,0.1299,0.0659,0.6208,0.1484
+Fairness Constraint,0.8364,0.7373,0.5326,0.6185,,-0.0957,0.0244,0.0178,0.5465,0.142
