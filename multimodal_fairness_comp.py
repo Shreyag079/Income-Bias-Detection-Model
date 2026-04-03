@@ -1,13 +1,3 @@
-"""
-Multi-Model Fairness & Performance Comparison
-Extends logistic regression baseline to include:
-  - Random Forest
-  - XGBoost
-  - SVM
-  - Decision Tree (RT)
-  - Naive Bayes (Bayesian)
-Each model is evaluated with both performance + fairness metrics.
-"""
 
 import pandas as pd
 import numpy as np
@@ -19,7 +9,6 @@ import json
 
 warnings.filterwarnings("ignore")
 
-# ─── Try importing optional libs ────────────────────────────────────────────
 try:
     from xgboost import XGBClassifier
     HAS_XGB = True
